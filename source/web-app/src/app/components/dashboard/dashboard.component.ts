@@ -530,7 +530,7 @@ export class DashboardComponent implements OnInit {
     updateBatteryData(batteryInfo: any) {
         this.displayText = 'Loading Dashboard...';
         // this vehicle subscribe is for fault detection will be uncommented later
-        //this.getFaultDetections('VSTG4323PMC000011');
+        this.getFaultDetections('VSTG4323PMC000011');
 
         this.showSpinner = true;
         this.showError = false;
