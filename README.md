@@ -80,6 +80,7 @@ You can click on a vehicle to view battery information. To demonstrate how a dig
 In the Battery Health Prediction panel to the right, the line chart shows past and predicted battery state of health. You can enlarge this panel and click Play to watch actual data streaming as comparison to predicted data. State of Health, RUL, and model drift were all predicted or calculated using the ML pipeline deployed with the web application.
 
 ![Fault Detection](assets/fault_detection.png)
+
 There are several services in the fault detection section. These are briefly summarized below.
 
 #### Anomaly Detection​
