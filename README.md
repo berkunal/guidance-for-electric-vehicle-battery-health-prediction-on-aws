@@ -77,11 +77,10 @@ You can click on a vehicle to view battery information. To demonstrate how a dig
 
 ![Battery](assets/battery.png)
 
-In the Battery Health Prediction panel to the right, the line chart shows past and predicted battery state of health. You can enlarge this panel and click Play to watch actual data streaming as comparison to predicted data. State of Health, RUL, and model drift were all predicted or calculated using the ML pipeline deployed with the web application.
+There are several services in the fault detection section. These are briefly summarized below.
 
 ![Fault Detection](assets/fault_detection.png)
 
-There are several services in the fault detection section. These are briefly summarized below.
 
 #### Anomaly Detection​
 
@@ -98,6 +97,8 @@ Deposition of lithium ions on the anode graphite surface is forming metallic lit
 #### Thermal Runaway Prediction​
 
 It is a dynamic process due to a self-sustaining increase in temperature of the battery pack and occurs due to various internal and external events such as electrode degradation, electrolyte decomposition, increased internal resistance, short circuits etc. The AI model processes daily data as batch to identify likelihood of Thermal Runaway happening within the next day for a given battery back.​
+
+In the Battery Health Prediction panel to the right, the line chart shows past and predicted battery state of health. You can enlarge this panel and click Play to watch actual data streaming as comparison to predicted data. State of Health, RUL, and model drift were all predicted or calculated using the ML pipeline deployed with the web application.
 
 ![Prediction](assets/prediction.png)
 
