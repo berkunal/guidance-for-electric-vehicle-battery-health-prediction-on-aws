@@ -2,7 +2,7 @@
 
 ### Introduction
 
-EV batteries, predominately lithium-ion (Li-ion) batteries, have been the bottleneck for scaling EVs, which are crucial to a net-zero economy. One challenge in the EV battery ecosystem is insufficient and inaccurate battery state of health (SOH) and remaining useful life (RUL) monitoring and prediction, resulting in shortened battery lifespan, driver frustration, lack of visibility for end-of-life processing, and wasted critical materials. Instead of the conventional static formula-based approach, this Guidance showcases how customers can use the AI/ML capabilities on AWS to easily predict SOH and RUL. Predictions of battery health will help OEMs and EV owners proactively plan for battery replacement, and most importantly, can be used to move battery into a new life and promote the overall circular economy of a battery. Moreover, integrating fault detection algorithms into EV battery management systems enhances overall system resilience and contributes to the seamless operation of electric vehicles, thus advancing the sustainability goals of the automotive industry.
+EV batteries, predominately lithium-ion (Li-ion) batteries, have been the bottleneck for scaling EVs, which are crucial to a net-zero economy. One challenge in the EV battery ecosystem is insufficient and inaccurate battery state of health (SOH) and remaining useful life (RUL) monitoring and prediction, resulting in shortened battery lifespan, driver frustration, lack of visibility for end-of-life processing, and wasted critical materials. Instead of the conventional static formula-based approach, this Guidance showcases how customers can use the AI/ML capabilities on AWS to easily predict SOH and RUL. Predictions of battery health will help OEMs and EV owners proactively plan for battery replacement, and most importantly, can be used to move battery into a new life and promote the overall circular economy of a battery. Moreover, integrating fault detection algorithms into EV battery management systems in collaboration with [Eatron Technologies](https://eatron.com/), enhances overall system resilience and contributes to the seamless operation of electric vehicles, thus advancing the sustainability goals of the automotive industry.
 
 The sample code in this project is based on the [Guidance for Electric Vehicle Battery Health Prediction on AWS](https://aws.amazon.com/solutions/guidance/electric-vehicle-battery-health-prediction-on-aws/). It deploys an event-driven ML pipeline for EV Battery health prediction using purpose-built services such as [Amazon Forecast](https://aws.amazon.com/forecast/). To simulate the data ingestion and consumption portions of the [Connected Mobility Platform](https://docs.aws.amazon.com/architecture-diagrams/latest/connected-mobility-platform-on-aws/connected-mobility-platform-on-aws.html), we build a web application, which allows you to upload battery health data and visualize battery health prediction results.
 
@@ -81,8 +81,7 @@ There is an analytics section to examine the data in detail. You can reach here 
 
 ![Analytics](assets/analytics.png)
 
-
-There are several services in the fault detection section. These are briefly summarized below.
+In the fault detection section, there are several services briefly summarized below.
 
 ![Fault Detection](assets/fault_detection.png)
 
@@ -104,6 +103,8 @@ Deposition of lithium ions on the anode graphite surface is forming metallic lit
 It is a dynamic process due to a self-sustaining increase in temperature of the battery pack and occurs due to various internal and external events such as electrode degradation, electrolyte decomposition, increased internal resistance, short circuits etc. The AI model processes daily data as batch to identify likelihood of Thermal Runaway happening within the next day for a given battery back.​
 
 In the Battery Health Prediction panel to the right, the line chart shows past and predicted battery state of health. You can enlarge this panel and click Play to watch actual data streaming as comparison to predicted data. State of Health, RUL, and model drift were all predicted or calculated using the ML pipeline deployed with the web application.
+
+Analytics and Fault detection services are provided by [Eatron Technologies](https://eatron.com/)
 
 ![Prediction](assets/prediction.png)
 
