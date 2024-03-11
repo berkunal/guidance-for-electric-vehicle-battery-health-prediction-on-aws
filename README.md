@@ -77,6 +77,11 @@ You can click on a vehicle to view battery information. To demonstrate how a dig
 
 ![Battery](assets/battery.png)
 
+There is an analytics section to examine the data in detail. You can reach here by clicking the See Analytics button next to the Battery ID.
+
+![Analytics](assets/analytics.png)
+
+
 There are several services in the fault detection section. These are briefly summarized below.
 
 ![Fault Detection](assets/fault_detection.png)
