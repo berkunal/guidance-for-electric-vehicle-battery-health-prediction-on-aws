@@ -104,7 +104,7 @@ It is a dynamic process due to a self-sustaining increase in temperature of the 
 
 In the Battery Health Prediction panel to the right, the line chart shows past and predicted battery state of health. You can enlarge this panel and click Play to watch actual data streaming as comparison to predicted data. State of Health, RUL, and model drift were all predicted or calculated using the ML pipeline deployed with the web application.
 
-Analytics and Fault detection services are provided by [Eatron Technologies](https://eatron.com/)
+Analytics and Fault detection services are provided by Eatron Technologies. An Eatron API Key is required for the fault detection algorithms to work, please contact [Eatron Technologies](https://eatron.com/).
 
 ![Prediction](assets/prediction.png)
 
