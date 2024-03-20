@@ -85,12 +85,20 @@ In the fault detection section, there are several services briefly summarized be
 
 ![Fault Detection](assets/fault_detection.png)
 
+#### Overtemperature
 
-#### Anomaly Detection​
+This occurs when a component or subsystem within the EV exceeds its safe operating temperature range. EV batteries operate within a specific temperature window. Exceeding this can lead to performance degradation, thermal runaway (uncontrolled temperature increase), and potential safety hazards. A rule-based system would have predefined temperature thresholds for various components. ​When the Trigger Anomaly Models switch is on, Overtemperature detection processes run in the background.
 
-Detecting off-nominal performance in an EV is challenging, because the expected performance of a single component is dependent on the overall system operation. Rule-based anomaly detection model identifies deviations from the normal behavior based on sensor readings exceeding pre-defined thresholds. ​ Anomalous behaviors are primarily ​ caused by Over Temperature, Over Current or ​ Over Voltage. ​When the Trigger Anomaly Models switch is on, anomaly detection processes run in the background.
+#### Overcurrent
 
-#### Accelerated Degradation (aging)​
+This refers to a situation where the electrical current flowing through a circuit exceeds the designed capacity of the wires, connectors, or components. The model would have limits on maximum allowable current for different circuits. If sensors detect current exceeding these limits for a specified duration, an overcurrent anomaly is raised. ​When the Trigger Anomaly Models switch is on, Overcurrent detection processes run in the background.
+
+#### Overvoltage
+
+This condition occurs when the voltage within an electrical circuit exceeds the maximum rated voltage for components within that circuit. Predefined voltage limits would exist for the battery packs. Exceeding these thresholds would immediately trigger an overvoltage anomaly. ​When the Trigger Anomaly Models switch is on, Overvoltage detection processes run in the background.
+
+
+#### Accelerated Degradation
 
 Cell level abnormal aging resulting in degraded capacity with respect to the rest of the cells in the pack. It exposes the risk of overcharging as well as reduced lifespan. The model behind the scene predicts the real-time cell voltage divergence much faster than conventional rule-based methods.​
 
